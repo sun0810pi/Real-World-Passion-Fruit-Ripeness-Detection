@@ -1,0 +1,25 @@
+# Cấu hình mặc định.
+# Đo trên bộ ảnh Canon EOS 200D II (6000x4000), thẻ đặt góc phải dưới.
+# Đổi máy hoặc đổi khoảng cách chụp thì chạy scripts/00_calibrate_layout.py
+# để dò lại, rồi lưu bằng --save-layout.
+
+layout:
+  name: canon_200d_ii
+  card_roi: [0.65, 0.71, 0.34, 0.18]      # x, y, w, h theo tỷ lệ 0-1
+  tag_roi:  [0.885, 0.735, 0.090, 0.080]  # mảnh giấy ghi mã quả
+  tag_rotate: 180                          # chữ viết ngược chiều máy
+  patch_y: [0.795, 0.822]                  # dải y của 4 ô xám
+  patch_x0: 0.6695
+  patch_dx: 0.0163
+  patch_w: 0.010
+  n_patches: 4
+
+thresholds:
+  a_star_turned: 10.0        # a* vượt ngưỡng này = pixel đã chuyển màu
+  min_fruit_area_frac: 0.002
+  crop_pad: 0.08
+  output_size: 320
+  saturation_ceiling: 252
+
+seeds: [0, 1, 2]
+val_frac: 0.2

@@ -1,0 +1,19 @@
+Chep anh goc vao thu muc nay.
+
+Cau truc mong doi (moi thu muc con la mot dot thu mau hoac mot nguon):
+
+    data/raw/
+        Chieu_4_14-8-2026/
+            IMG_1689.JPG
+            IMG_1689.CR3      <- file RAW di kem, script tu tim
+            ...
+        Sang_5_15-8-2026/
+            ...
+
+Khong can chia san theo thu muc nhan. Script 01 tu doc.
+
+Neu anh dang o cho khac, tro thang --data vao do thay vi chep:
+
+    python scripts\01_build_manifest.py --data "D:\qua_chanh\..." --out data\manifest.csv
+
+Tren PowerShell, duong dan co dau cach phai dat trong dau nhay kep.
